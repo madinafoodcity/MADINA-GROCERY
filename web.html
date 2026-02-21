@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Food City Supplies for Foodstuffs is a trusted supplier of rice, grains, canned foods, spices, cooking oils, and dry foods in Saudi Arabia.">
+
+<meta name="keywords" content="food supplier saudi arabia, grocery wholesale, rice supplier, spices supplier, canned food distributor, food city supplies">
+
+<meta name="author" content="Food City Supplies for Foodstuffs">
+
+<meta name="robots" content="index, follow">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food City Supplies | Food Supplier in Saudi Arabia</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #ffffff;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    header {
+        background-color: #0f5132;
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+        position: relative;
+    }
+
+    header img {
+        max-width: 150px;
+        margin-bottom: 15px;
+    }
+
+    header h1 {
+        margin: 10px 0 5px;
+    }
+
+    .lang-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: #f4c430;
+        color: #0f5132;
+        border: none;
+        padding: 8px 14px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+
+    section {
+        max-width: 1000px;
+        margin: auto;
+        padding: 50px 20px;
+    }
+
+    h2 {
+        color: #0f5132;
+        margin-bottom: 20px;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .product-box {
+        background: #f6f6f6;
+        padding: 25px;
+        text-align: center;
+        border-radius: 8px;
+        border-top: 5px solid #f4c430;
+        font-weight: bold;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        border: 0;
+    }
+
+    footer {
+        background-color: #0f5132;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #25D366;
+        color: white;
+        padding: 14px 18px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .ar {
+    direction: rtl;
+    font-family: Tahoma;
+}
+    .hidden {
+    display: none;
+}
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                url("hero-food.jpg") center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    background: #f4c430;
+    color: #0f5132;
+    padding: 12px 26px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-btn:hover {
+    background: #ffd966;
+}
+.contact-box {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.contact-box textarea {
+    min-height: 120px;
+}
+
+.contact-box button {
+    background: #0f5132;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-box button:hover {
+    background: #157347;
+}
+.contact-info {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+.en.hidden,
+.ar.hidden {
+    display: none !important;
+}
+.testimonials {
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-style: italic;
+}
+
+.testimonial-card strong {
+    display: block;
+    margin-top: 10px;
+    color: #0f5132;
+}
+.partners {
+    background: #ffffff;
+    text-align: center;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.partner-logos img {
+    max-height: 80px;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.partner-logos img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+.partners {
+    display: none;
+}
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+
+<script>
+let currentLang = localStorage.getItem("lang") || "en";
+
+function applyLang(lang) {
+    document.querySelectorAll('.en').forEach(el => {
+        el.classList.toggle('hidden', lang !== "en");
+    });
+
+    document.querySelectorAll('.ar').forEach(el => {
+        el.classList.toggle('hidden', lang !== "ar");
+    });
+
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+    document.documentElement.lang = lang;
+
+    localStorage.setItem("lang", lang);
+}
+
+function toggleLang() {
+    currentLang = currentLang === "en" ? "ar" : "en";
+    applyLang(currentLang);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    applyLang(currentLang);
+});
+</script>
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll("section").forEach(section => {
+    section.classList.add("fade-in");
+    observer.observe(section);
+});
+</script>
+</head>
+
+<body>
+
+<header>
+    <button class="lang-btn" onclick="toggleLang()" id="langBtn">AR</button>
+    <img src="logo.jpeg" alt="Food City Logo">
+
+    <h1 class="en">Food City Supplies for Foodstuffs</h1>
+    <h1 class="ar">تموينات مدينة الغذاء للمواد الغذائية</h1>
+</header>
+<section class="hero">
+
+    <!-- English -->
+    <div class="hero-content en">
+        <h2>Your Trusted Food Supply Partner</h2>
+        <p>High quality food products for markets, restaurants, and businesses.</p>
+        <a href="#contact" class="hero-btn">Request a Quote</a>
+    </div>
+
+    <!-- Arabic -->
+    <div class="hero-content ar">
+        <h2>شريكك الموثوق لتوريد المواد الغذائية</h2>
+        <p>منتجات غذائية عالية الجودة للأسواق والمطاعم والشركات.</p>
+        <a href="#contact" class="hero-btn">اطلب عرض سعر</a>
+    </div>
+
+</section>
+<section>
+    <h2 class="en">About Us</h2>
+    <h2 class="ar">من نحن</h2>
+
+    <p class="en">
+        Food City Supplies for Foodstuffs is a trusted supplier of high-quality
+        food products serving markets, restaurants, and businesses.
+    </p>
+
+    <p class="ar">
+        تموينات مدينة الغذاء للمواد الغذائية توفر منتجات غذائية عالية الجودة
+        لتلبية احتياجات الأسواق والمطاعم والشركات.
+    </p>
+</section>
+
+<section>
+    <h2 class="en">Our Products</h2>
+    <h2 class="ar">منتجاتنا</h2>
+
+    <div class="products">
+        <div class="product-box en">Rice & Grains</div>
+        <div class="product-box ar">الأرز والحبوب</div>
+
+        <div class="product-box en">Canned Foods</div>
+        <div class="product-box ar">المعلبات</div>
+
+        <div class="product-box en">Spices & Seasonings</div>
+        <div class="product-box ar">البهارات والتوابل</div>
+
+        <div class="product-box en">Cooking Oils</div>
+        <div class="product-box ar">زيوت الطبخ</div>
+
+        <div class="product-box en">Beverages</div>
+        <div class="product-box ar">المشروبات</div>
+
+        <div class="product-box en">Dry & Packaged Foods</div>
+        <div class="product-box ar">المواد الغذائية الجافة</div>
+    </div>
+</section>
+
+<section>
+    <h2 class="en">Why Choose Us</h2>
+    <h2 class="ar">لماذا نحن</h2>
+
+    <ul class="en">
+        <li>✔ High quality products</li>
+        <li>✔ Trusted suppliers</li>
+        <li>✔ Competitive prices</li>
+        <li>✔ Professional service</li>
+    </ul>
+
+    <ul class="ar">
+        <li>✔ منتجات عالية الجودة</li>
+        <li>✔ موردون موثوقون</li>
+        <li>✔ أسعار تنافسية</li>
+        <li>✔ خدمة احترافية</li>
+    </ul>
+</section>
+
+<section class="contact" id="contact">
+
+    <h2 class="en">Contact Us</h2>
+    <h2 class="ar">تواصل معنا</h2>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+
+        <p class="en"><strong>Phone:</strong> +966534285159</p>
+        <p class="ar"><strong>الهاتف:</strong> +966534285159</p>
+
+        <p class="en"><strong>Email:</strong> madinafoodcity@gmail.com</p>
+        <p class="ar"><strong>البريد الإلكتروني:</strong> madinafoodcity@gmail.com</p>
+
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-box">
+
+        <!-- English -->
+        <form class="en" action="https://formspree.io/f/xykdgvob" method="POST">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <input type="tel" name="phone" placeholder="Phone Number">
+
+            <textarea name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+        <!-- Arabic -->
+        <form class="ar" action="https://formspree.io/f/xykdgvob" method="POST">
+
+            <input type="text" name="name" placeholder="الاسم" required>
+
+            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+
+            <input type="tel" name="phone" placeholder="رقم الهاتف">
+
+            <textarea name="message" placeholder="رسالتك" required></textarea>
+
+            <button type="submit">إرسال</button>
+
+        </form>
+
+    </div>
+
+</section>
+<section class="testimonials">
+
+    <h2 class="en">What Our Customers Say</h2>
+    <h2 class="ar">آراء عملائنا</h2>
+
+    <div class="testimonial-grid">
+
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card en">
+            <p>"High quality products and excellent service."</p>
+            <strong>- Ahmed, Restaurant Owner</strong>
+        </div>
+
+        <div class="testimonial-card ar">
+            <p>"منتجات عالية الجودة وخدمة ممتازة."</p>
+            <strong>- أحمد، صاحب مطعم</strong>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card en">
+            <p>"Fast delivery and competitive prices."</p>
+            <strong>- Khalid, Supermarket Manager</strong>
+        </div>
+
+        <div class="testimonial-card ar">
+            <p>"توصيل سريع وأسعار منافسة."</p>
+            <strong>- خالد، مدير سوبرماركت</strong>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card en">
+            <p>"Very professional and reliable supplier."</p>
+            <strong>- Sara, Cafe Owner</strong>
+        </div>
+
+        <div class="testimonial-card ar">
+            <p>"مورد موثوق واحترافي جداً."</p>
+            <strong>- سارة، صاحبة مقهى</strong>
+        </div>
+
+    </div>
+
+</section>
+<section class="partners">
+
+    <h2 class="en">Certifications & Partners</h2>
+    <h2 class="ar">الاعتمادات والشركاء</h2>
+
+    <div class="partner-logos">
+
+        <img src="cert1.png" alt="Certification 1">
+        <img src="cert2.png" alt="Certification 2">
+        <img src="partner1.png" alt="Partner 1">
+        <img src="partner2.png" alt="Partner 2">
+
+    </div>
+
+</section>
+<section class="map">
+    <h2 class="en">Our Location</h2>
+    <h2 class="ar">موقعنا</h2>
+
+    <!-- Replace map link with your exact location -->
+    <iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5916.438329743656!2d41.65162299999998!3d20.264893000000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15ef19bb5a312f43%3A0xd28220d9f54268a3!2zKNio2YLYp9mE2Kkp2KrZhdmI2YrZhtin2Kog2YXYr9mK2YbYqSDYp9mE2LrYr9in2KEg2KfZhNmF2YjYp9ivINin2YTYutiv2KfYodmK2KkgRk9PRCBDSVRZIFNVUFBMSUVTIEZPUiBGT09EIFNUVUZGUyAoR1JPQ0VSWSk!5e1!3m2!1sen!2ssa!4v1770364685472!5m2!1sen!2ssa"
+width="100%"
+height="300"
+style="border:0;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe> 
+</section>
+<footer>
+
+    <div class="social-links">
+
+        <a href="https://wa.me/966534285159" target="_blank">WhatsApp</a>
+        <a href="https://facebook.com/yourpage" target="_blank">Facebook</a>
+        <a href="mailto:madinafoodcity@gmail.com">Email</a>
+
+    </div>
+
+    © 2026 Food City Supplies for Foodstuffs
+
+</footer>
+
+<!-- WhatsApp Button -->
+<a class="whatsapp" href="https://wa.me/966534285159" target="_blank">
+    WhatsApp
+</a>
+
+</body>
+</html>
