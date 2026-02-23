@@ -125,7 +125,7 @@
 }
 .hero {
     background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-                url("hero-food.jpg") center/cover no-repeat;
+                url("hero-food.png") center/cover no-repeat;
     height: 70vh;
     display: flex;
     align-items: center;
@@ -280,6 +280,96 @@
     opacity: 1;
     transform: translateY(0);
 }
+.site-logo {
+    max-width: 160px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    .site-logo {
+        max-width: 120px;
+    }
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.site-logo {
+    max-width: 160px;
+    height: auto;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover animation */
+.site-logo:hover {
+    transform: scale(1.08) rotate(-2deg);
+    filter: brightness(1.1);
+}
+
+/* Small entrance animation */
+@keyframes logoFade {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.site-logo {
+    animation: logoFade 1s ease;
+}
+.site-logo {
+    max-width: 170px;
+    height: auto;
+    margin-bottom: 15px;
+    transition: all 0.4s ease;
+    animation: floatLogo 4s ease-in-out infinite;
+}
+
+/* 3D Shadow */
+.site-logo {
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));
+}
+
+/* Glow Effect */
+.site-logo:hover {
+    filter: drop-shadow(0 0 15px #f4c430)
+            drop-shadow(0 0 25px #f4c430);
+    transform: scale(1.1) rotate(8deg);
+}
+
+/* Floating Animation */
+@keyframes floatLogo {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+}
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #0f5132;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader-logo {
+    width: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
 </style>
 
 <script>
@@ -323,14 +413,24 @@ document.querySelectorAll("section").forEach(section => {
     observer.observe(section);
 });
 </script>
+<script>
+window.addEventListener("load", function(){
+    document.getElementById("loader").style.display = "none";
+});
+</script>
 </head>
 
 <body>
+    <div id="loader">
+    <img src="logo.png" class="loader-logo">
+</div>
 
 <header>
     <button class="lang-btn" onclick="toggleLang()" id="langBtn">AR</button>
-    <img src="logo.jpeg" alt="Food City Logo">
-
+    <a href="index.html" class="logo-link">
+    <img src="logo.png" alt="Food City Supplies Logo" class="site-logo">
+</a>
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
     <h1 class="en">Food City Supplies for Foodstuffs</h1>
     <h1 class="ar">تموينات مدينة الغذاء للمواد الغذائية</h1>
 </header>
@@ -338,7 +438,6 @@ document.querySelectorAll("section").forEach(section => {
 
     <!-- English -->
     <div class="hero-content en">
-        <h2>Your Trusted Food Supply Partner</h2>
         <p>High quality food products for markets, restaurants, and businesses.</p>
         <a href="#contact" class="hero-btn">Request a Quote</a>
     </div>
