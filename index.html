@@ -162,6 +162,10 @@
 .hero-btn:hover {
     background: #ffd966;
 }
+.hero {
+    height: 100vh;
+    background: url("hero-food.png") center center / cover no-repeat;
+}
 .contact-box {
     max-width: 600px;
     margin: auto;
@@ -374,6 +378,11 @@ header {
 @keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
+}
+@media (max-width: 768px) {
+    .hero {
+        background-position: center top;
+    }
 }
 </style>
 
