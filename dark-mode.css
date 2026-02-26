@@ -1,0 +1,108 @@
+/* =========================
+   DARK MODE THEME
+========================= */
+/* Smooth transition for theme change */
+body,
+header,
+footer,
+section,
+.product-box,
+.testimonial-card,
+.contact-box input,
+.contact-box textarea,
+.hero-btn {
+    transition: background-color 0.4s ease,
+                color 0.4s ease,
+                border 0.4s ease,
+                box-shadow 0.4s ease;
+}
+/* =========================
+   PREMIUM DARK THEME
+========================= */
+
+body.dark-mode {
+    background-color: #0e1111;
+    color: #e6e6e6;
+}
+
+/* Header & Footer */
+body.dark-mode header,
+body.dark-mode footer {
+    background: linear-gradient(to right, #0a3d2a, #06281d);
+}
+
+/* Sections */
+body.dark-mode section {
+    background-color: #151919;
+}
+
+/* Cards */
+body.dark-mode .product-box,
+body.dark-mode .testimonial-card {
+    background: #1c2121;
+    border-top: 5px solid #f4c430;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* Contact form */
+body.dark-mode .contact-box input,
+body.dark-mode .contact-box textarea {
+    background-color: #1c2121;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+/* Headings */
+body.dark-mode h2 {
+    color: #f4c430;
+}
+
+/* Hero button */
+body.dark-mode .hero-btn {
+    background: #f4c430;
+    color: #111;
+}
+/* Animated dark background */
+body.dark-mode {
+    background: linear-gradient(
+        -45deg,
+        #0e1111,
+        #0a1f1a,
+        #111717,
+        #06281d
+    );
+    background-size: 400% 400%;
+    animation: darkGradient 15s ease infinite;
+    color: #e6e6e6;
+}
+
+@keyframes darkGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* Dark mode hero styling */
+body.dark-mode .hero::after {
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.6)
+    );
+}
+
+body.dark-mode .hero-content {
+    backdrop-filter: blur(6px);
+}
+/* Glass effect for cards */
+body.dark-mode .product-box,
+body.dark-mode .testimonial-card,
+body.dark-mode .contact-box {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    border-radius: 12px;
+}
+body.dark-mode .whatsapp {
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.7);
+}
