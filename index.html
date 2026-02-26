@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="dark-mode.css">
 <link rel="icon" type="image/png" sizes="32x32" href="icon-512.png">
 <link rel="apple-touch-icon" href="icon-512.png">
 
@@ -305,6 +306,17 @@ header {
     flex-direction: column;
     align-items: center;
 }
+.dark-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #f4c430;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
 .site-logo {
     max-width: 160px;
     height: auto;
@@ -384,6 +396,22 @@ header {
         background-position: center top;
     }
 }
+.dark-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #f4c430;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.dark-btn:hover {
+    transform: scale(1.1);
+}
 </style>
 
 <script>
@@ -440,6 +468,7 @@ window.addEventListener("load", function(){
 </div>
 
 <header>
+    <button class="dark-btn" onclick="toggleDarkMode()">🌙</button>
     <button class="lang-btn" onclick="toggleLang()" id="langBtn">AR</button>
     <a href="index.html" class="logo-link">
     <img src="logo.png" alt="Food City Supplies Logo" class="site-logo">
@@ -666,6 +695,7 @@ referrerpolicy="no-referrer-when-downgrade">
 <a class="whatsapp" href="https://wa.me/966534285159" target="_blank">
     WhatsApp
 </a>
-
+<script src="dark-mode.js"></script>
 </body>
 </html>
+
